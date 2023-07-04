@@ -1,0 +1,12 @@
+```html
+<div class="explore-container">
+    <h2>Explore Algorithms and Data Structures</h2>
+    <div *ngFor="let exploreItem of exploreItems">
+        <div class="explore-item">
+            <h3>{{exploreItem.title}}</h3>
+            <p>{{exploreItem.description}}</p>
+            <a [href]="exploreItem.link" target="_blank">Learn More</a>
+        </div>
+    </div>
+</div>
+```
