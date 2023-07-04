@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Explore</h1>
+    <div *ngIf="exploreData">
+        <div class="card" *ngFor="let item of exploreData">
+            <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-text">{{item.description}}</p>
+                <a href="{{item.link}}" class="btn btn-primary">Go to LeetCode</a>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!exploreData">
+        <p>Loading...</p>
+    </div>
+</div>

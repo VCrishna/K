@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Problems</h1>
+    <div *ngIf="problems">
+        <div *ngFor="let problem of problems">
+            <h2>{{problem.title}}</h2>
+            <p>{{problem.description}}</p>
+            <a [routerLink]="['/problem', problem.id]">View Details</a>
+        </div>
+    </div>
+    <div *ngIf="!problems">
+        <p>Loading problems...</p>
+    </div>
+</div>
