@@ -1,0 +1,15 @@
+```html
+<div class="problems-container">
+    <h2>Problems</h2>
+    <div *ngIf="problems">
+        <div *ngFor="let problem of problems">
+            <h3>{{problem.title}}</h3>
+            <p>{{problem.description}}</p>
+            <button (click)="solveProblem(problem.id)">Solve</button>
+        </div>
+    </div>
+    <div *ngIf="!problems">
+        <p>No problems available at the moment.</p>
+    </div>
+</div>
+```

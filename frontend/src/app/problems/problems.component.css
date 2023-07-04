@@ -1,0 +1,54 @@
+.problems-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.problem-card {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.problem-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.problem-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.problem-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.problem-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button.edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button.delete {
+    background-color: #f44336;
+    color: white;
+}

@@ -1,0 +1,29 @@
+.explore-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.explore-item {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.explore-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.explore-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.explore-content {
+    font-size: 16px;
+}
